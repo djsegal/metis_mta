@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Transit Layer</title>
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 13,
+          center: {lat: 40.7365, lng: -73.995},
+          disableDefaultUI: true
+        });
+
+        var transitLayer = new google.maps.TransitLayer();
+        transitLayer.setMap(map);
+
+
+      new google.maps.Marker({ optimized: false, zIndex:99999999,icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png", map: map, title: "14 ST", position: {lng: -74.00020100063497, lat: 40.737825999728116 }});
+      new google.maps.Marker({ optimized: false, zIndex:99999999,icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png", map: map, title: "14 ST-UNION SQ ", position: {lng: -73.98995099881881, lat: 40.734673000996125 }});
+      new google.maps.Marker({ optimized: false, zIndex:99999999,icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png", map: map, title: "23 ST", position: {lng: -73.992877 , lat: 40.742933}});
+      new google.maps.Marker({ optimized: false, zIndex:99999999,icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png", map: map, title: "34 ST-HERALD SQ", position: {lng: -73.99105699913983, lat: 40.75037300003949  }});
+      new google.maps.Marker({ optimized: false, zIndex:99999999,icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png", map: map, title: "34 ST-HUDSON YD", position: {lng: -74.00219709442206, lat: 40.75544635961596  }});
+      new google.maps.Marker({ optimized: false, zIndex:99999999,icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png", map: map, title: "34 ST-PENN STA ", position: {lng: -73.99339099970578, lat: 40.752287000775894  }});
+
+
+      new google.maps.Marker({ optimized: false, zIndex:99999999,icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png", map: map, title: "42 ST-BRYANT PK", position: {lng: -73.98459099904711, lat: 40.754184001312545 }});
+      new google.maps.Marker({ optimized: false, zIndex:99999999,icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png", map: map, title: "42 ST-PORT AUTH", position: {lng: -73.98973500085859, lat: 40.757307998551504 }});
+      new google.maps.Marker({ optimized: false, zIndex:99999999,icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png", map: map, title: "47-50 STS ROCK ", position: {lng: -73.98133100227702, lat: 40.75864100159815  }});
+      new google.maps.Marker({ optimized: false, zIndex:99999999,icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png", map: map, title: "49 ST", position: {lng: -73.98420956591096, lat: 40.759801973870694 }});
+      new google.maps.Marker({ optimized: false, zIndex:99999999,icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png", map: map, title: "5 AV/53 ST ", position: {lng: -73.9752485052734, lat: 40.76008683231326 }});
+      new google.maps.Marker({ optimized: false, zIndex:99999999,icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png", map: map, title: "51 ST", position: {lng: -73.97192000069982, lat: 40.75710699989316  }});
+      new google.maps.Marker({ optimized: false, zIndex:99999999,icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png", map: map, title: "57 ST-7 AV ", position: {lng: -73.980088 , lat: 40.765461}});
+      // new google.maps.Marker({ optimized: false, zIndex:99999999,icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png", map: map, title: "59 ST", position: {lng: -74.01788099953987, lat: 40.6413616662838 }});
+      new google.maps.Marker({ optimized: false, zIndex:99999999,icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png", map: map, title: "59 ST COLUMBUS ", position: {lng: -73.98192900232715, lat: 40.76824700063689  }});
+      new google.maps.Marker({ optimized: false, zIndex:99999999,icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png", map: map, title: "B'WAY-LAFAYETTE", position: {lng: -73.99620399876055, lat: 40.725296998738045 }});
+      new google.maps.Marker({ optimized: false, zIndex:99999999,icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png", map: map, title: "BOWLING GREEN", position: {lng: -74.01400799803432, lat: 40.70491399928076  }});
+      new google.maps.Marker({ optimized: false, zIndex:99999999,icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png", map: map, title: "CHAMBERS ST", position: {lng: -74.00858473570133, lat: 40.714111000774025 }});
+      new google.maps.Marker({ optimized: false, zIndex:99999999,icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png", map: map, title: "FLUSHING-MAIN", position: {lng: -73.83003000262508, lat: 40.75959999915012  }});
+      new google.maps.Marker({ optimized: false, zIndex:99999999,position: {lng: -74.007744444445 , lat: 40.7102055556    }, icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png", map: map, title: "     Fulton St "});
+      new google.maps.Marker({ optimized: false, zIndex:99999999,icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png", map: map, title: "GRD CNTRL-42 ST", position: {lng: -73.9767132992584, lat: 40.75180742981634 }});
+      new google.maps.Marker({ optimized: false, zIndex:99999999,icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png", map: map, title: "LEXINGTON AV/53", position: {lng: -73.96907237490204, lat: 40.75746830782865  }});
+      new google.maps.Marker({ optimized: false, zIndex:99999999,icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png", map: map, title: "PATH NEW WTC ", position: {lng: -74.0114 , lat: 40.7115}});
+      new google.maps.Marker({ optimized: false, zIndex:99999999,icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png", map: map, title: "THIRTY THIRD ST", position: {lng: -73.98207600148947, lat: 40.74608099909145  }});
+      new google.maps.Marker({ optimized: false, zIndex:99999999,icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png", map: map, title: "TIMES SQ-42 ST ", position: {lng: -73.98676800153976, lat: 40.75461199851542  }});
+      new google.maps.Marker({ optimized: false, zIndex:99999999,icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png", map: map, title: "W 4 ST-WASH SQ ", position: {lng: -74.00030814755975, lat: 40.732254493367876 }});
+      new google.maps.Marker({ optimized: false, zIndex:99999999,icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png", map: map, title: "WALL ST", position: {lng: -74.01186199860112, lat: 40.70755700086603  }});
+
+
+
+
+
+
+        var marker = new google.maps.Marker({
+            position: {lat: 37.8199,lng: -122.4783},
+            map: map,
+            title: 'Golden Gate Bridge'
+            });
+
+        var mapOptions = {
+          styles: [
+            {
+              featureType: "transit.station.bus",
+              stylers: [
+                { visibility: "off" }
+              ]
+            }
+        ]};
+        map.setOptions(mapOptions);
+
+        var styles = [
+           {
+             featureType: "poi",
+             stylers: [
+              { visibility: "off" }
+             ]
+            }
+        ];
+
+        map.setOptions({styles: styles});
+
+
+      }
+    </script>
+
+    <style>
+      img[src='http://maps.google.com/mapfiles/kml/pal3/icon57.png'] {
+        width: 11px !important;
+        height: 11px !important;
+        opacity: 0.65 !important;
+        z-index: -1 !important;
+      }
+
+      img[src='http://maps.google.com/mapfiles/ms/icons/blue-dot.png'] {
+        z-index: 10000 !important;
+        width: 30px !important;
+        height: 30px !important;
+        opacity: 0.85 !important;
+      }
+
+      img[src='http://maps.google.com/mapfiles/ms/icons/green-dot.png'] {
+        z-index: 10000 !important;
+        width: 30px !important;
+        height: 30px !important;
+      }
+
+      img[src='http://maps.google.com/mapfiles/ms/icons/red-dot.png'] {
+        z-index: 9000 !important;
+        opacity: 0.8 !important;
+        width: 26px !important;
+        height: 26px !important;
+      }
+
+      img[src='http://maps.google.com/mapfiles/ms/icons/yellow-dot.png'] {
+        z-index: 8000 !important;
+        width: 28px !important;
+        height: 28px !important;
+      }
+
+
+    </style>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCR8H32g_VhI6inHswabgSFSC32-E3bP0Y&callback=initMap">
+    </script>
+  </body>
+</html>
